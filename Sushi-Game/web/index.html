@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>The Game</title>
+</head>
+
+<body onkeydown="movement(event)">
+    <div id="game">
+        <div id="leftWall"></div>
+        <div id="gameArea">
+            <img src="../resources/background.jpg" id="backgroundImage">
+            <div id="player0" class="player">
+                <div class="firstStickContainer">
+                    <div id="firstStick0" class="firstStick"></div>
+                </div>
+                <div id="sushiContainer0"></div>
+                <div class="secondStickContainer">
+                    <div id="secondStick0" class="secondStick"></div>
+                </div>
+            </div>
+            <div id="tape1">
+                <div id="tapeVisual"></div>
+            </div>
+        </div>
+        <div id="settingsDiv">
+            <div id="settings">
+                <div id="playerSettings">   
+                    <p>Player 1</p>
+                    <p id="p0score">Score: 0</p> 
+                    <div id="controls0" class="controls">
+                        <button class="controlButton">Left</button>
+                        <button class="controlButton">Down</button>
+                        <button class="controlButton">Right</button>
+                    </div>
+                    <select onchange="changeColor(0)" name="p0colors" id="p0colors">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+                <div id="newPlayerButton"><button onclick="addPlayer()" id="addPlayer">Add Player</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="./mediator.js"></script>
+    <script src="./index.js"></script>
+    <script src="./server/calculator.js"></script>
+    <script src="./server/sushi.js"></script>
+    <script src="./sushitape.js"></script>
+</body>
+
+</html>     

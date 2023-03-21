@@ -1,0 +1,42 @@
+@keyframes show {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+#frontPageText {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    color: rgb(68, 68, 68);
+    font-size: 30px;
+    animation-name: show;
+    opacity: 0%;
+    animation-duration: 4s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+#welcomePageButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcomePageLoginButton {
+    margin: 2.5%;
+    width: 250px;
+    opacity: 0%;
+    animation-name: show;
+    animation-delay: 2.2s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#welcomePageRegisterButton {
+    margin: 2.5%;
+    width: 250px;
+    opacity: 0%;
+    animation-name: show;
+    animation-delay: 2.4s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}

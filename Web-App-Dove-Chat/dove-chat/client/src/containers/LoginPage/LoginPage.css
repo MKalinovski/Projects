@@ -1,0 +1,40 @@
+@keyframes opacity {
+    from {opacity: 0%}
+    to {opacity: 100%}
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login {
+    width: 250px;
+    margin: 10px;
+}
+
+#loginPage {
+    opacity: 0%;
+    display: flex;
+    flex-direction: column;
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+#remember {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(68, 68, 68);
+}
+
+#rememberText {
+    margin-left: 40px;
+}
+
+#error {
+    color: red;
+}

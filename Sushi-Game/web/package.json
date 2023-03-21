@@ -1,0 +1,8 @@
+{
+  "name": "Mateusz",
+  "version": "1.0.0",
+  "description": "easy game",
+  "main": "index.js",
+  "author": "mateusz",
+  "license": "MIT"
+}

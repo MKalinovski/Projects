@@ -1,0 +1,204 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+#game {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 800px;
+    height: 800px;
+}
+
+#leftWall {
+    display: flex;
+    background-color: black;
+    width: 200px;
+    z-index: 100;
+}
+
+#gameArea {
+    position: relative;
+    background-size: contain;
+    width: 400px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+}
+
+#backgroundImage {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    filter: blur(8px);
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    top: 50px;
+    left: 175px;
+    margin-bottom: 10%;
+    width: 50px;
+    height: 80px;
+}
+
+.firstStickContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 15px;
+    height: 100%;
+}
+
+.firstStick {
+    width: 5px;
+    rotate: 5deg;
+    background-color: red;
+}
+
+.secondStickContainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 15px;
+    height: 100%;
+}
+
+.secondStick {
+    width: 5px;
+    rotate: -5deg;
+    background-color: red;
+}
+
+#settings {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 700px;
+}
+
+#newPlayerButton {
+    height: 150px;
+}
+
+#addPlayer {
+    margin-top: 30px;
+}
+
+#settingsDiv {
+    background-color: black;
+    z-index: 100;
+    width: 200px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+.controlButton {
+    display: flex;
+}
+
+#playerSettings {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#addPlayer {
+    width: 90px;
+    height: 30px;
+    border-radius: 10%;
+}
+
+#tape1 {
+    display: flex;
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    top: 680px;
+    z-index: 0;
+}
+
+#tapeVisual {
+    display:flex;
+    background-color: rgba(30, 30, 30, 100);
+    align-self:flex-end;
+    height: 25px;
+    width: 100%;
+    z-index: 1;
+}
+
+.sushi{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    left: -70px;
+    width: 70px;
+    height: 50px;
+    z-index: 5;
+}
+
+#plate{
+    height: 15px;
+    width: 70px;
+    background-image: url(../resources/plate.png);
+    z-index: 5;
+    background-size: cover;
+}
+
+#hosomakiSushi{
+    margin-bottom: -5px;
+    width: 20px;
+    height: 25px;
+    background-image: url(../resources/hosomakisushi1.png);
+    background-size: contain;
+    scale: 100%;
+    z-index: 6;
+}
+
+#nigiriSushi{
+    margin-bottom: -5px;
+    width: 40px;
+    height: 20px;
+    background-image: url(../resources/nigirisushi1.png);
+    background-size: contain;
+    scale: 100%;
+    z-index: 6;
+}
+
+#wasabi{
+    margin-bottom: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(36, 112, 75);
+    scale: 100%;
+    z-index: 6;
+}
+
+#soySauce{
+    margin-bottom: -5px;
+    width: 20px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    scale: 100%;
+    z-index: 6;
+}
+
